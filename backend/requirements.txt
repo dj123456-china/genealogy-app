@@ -1,0 +1,10 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+SQLAlchemy==2.0.37
+PyMySQL==1.1.1
+alibabacloud-dypnsapi20170525==2.0.0
+python-dotenv==1.0.1
+Pillow==11.3.0
+lunar-python==1.4.8
+pywebpush==2.0.3
+requests==2.32.5

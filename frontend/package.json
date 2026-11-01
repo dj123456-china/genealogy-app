@@ -1,0 +1,16 @@
+{
+  "name": "jiapu-uni-app",
+  "version": "2.0.0",
+  "private": true,
+  "description": "家谱制作器 · HBuilderX / uni-app Vue 3 项目",
+  "scripts": {
+    "test": "node --experimental-default-type=module --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@noble/hashes": "1.8.0",
+    "lunar-javascript": "1.7.7"
+  },
+  "devDependencies": {
+    "vue": "^3.4.21"
+  }
+}

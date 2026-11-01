@@ -1,0 +1,21 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "navigationBarTitleText": "家谱制作器",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none"
+        }
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#ede9e3",
+    "backgroundTextStyle": "dark",
+    "navigationBarTitleText": "家谱制作器"
+  }
+}

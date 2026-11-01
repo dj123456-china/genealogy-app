@@ -1,0 +1,30 @@
+/* 仅处理 uni-app 组件默认值与原网页元素之间的差异。 */
+.parity-root, .parity-root view, .parity-root text, .parity-root image, .parity-root input, .parity-root textarea, .parity-root picker { box-sizing:border-box; }
+
+.modal-layer { position:fixed; inset:0; z-index:80; display:flex; align-items:center; justify-content:center; background:rgba(90,42,37,.28); backdrop-filter:blur(5px); padding:0; overscroll-behavior:contain; }
+.modal-layer.login-layer { background:rgba(48,28,25,.67); backdrop-filter:blur(12px) saturate(.72); }
+.modal-layer .app-dialog { position:relative; margin:0; flex-shrink:0; }
+.app-dialog .el-form { margin:0; }
+.modal-layer .app-dialog .el-input[type=checkbox] { width:13px; height:13px; margin:3px 3px 3px 4px; padding:0; }
+.native-input-box { position:relative; }
+.native-input-box input { font:inherit; width:100%; height:100%; }
+.native-select-value, .native-date-value { display:flex; align-items:center; justify-content:space-between; min-height:22px; }
+.native-select-arrow { margin-left:10px; font-size:12px; }
+.native-suggestions { position:absolute; top:100%; left:0; right:0; z-index:5; background:var(--surface-strong); border:1px solid var(--line); }
+.native-suggestions > view { padding:8px 10px; }
+.el-input[readonly] { cursor:default; }
+.hero-panel > .el-img { background-size:cover; background-position:center 42%; }
+@media (max-width:760px) { .hero-panel > .el-img { background-position:66% center; } }
+/* #ifdef H5 */
+uni-page-body { min-height:100vh; }
+/* #endif */
+
+/* #ifdef H5 */
+body { overflow-y:scroll; }
+/* #endif */
+
+.login-verified-phone { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 36px; }
+.login-verified-phone > .el-span { font-size: 16px; letter-spacing: .06em; }
+
+.reminder-empty { padding: 28px 0; color: var(--muted, #8a8177); }
+.reminder-empty .el-p { margin: 12px 0 20px; }

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">家谱制作器 Logo</title>
+  <desc id="desc">朱砂红方形印章，中心为谱字与家族树纹样</desc>
+  <rect width="1024" height="1024" rx="128" fill="#8b2f2a"/>
+  <rect x="72" y="72" width="880" height="880" rx="88" fill="none" stroke="#f6ead9" stroke-width="18"/>
+  <rect x="104" y="104" width="816" height="816" rx="68" fill="none" stroke="#d7aa72" stroke-width="5" opacity=".9"/>
+  <g fill="none" stroke="#f6ead9" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" opacity=".72">
+    <path d="M512 218v142"/>
+    <path d="M512 300L330 438M512 300l182 138"/>
+    <path d="M330 438v116M694 438v116"/>
+    <path d="M330 554l-104 86M330 554l104 86M694 554l-104 86M694 554l104 86"/>
+    <circle cx="512" cy="196" r="22" fill="#f6ead9" stroke="none"/>
+    <circle cx="330" cy="438" r="18" fill="#f6ead9" stroke="none"/>
+    <circle cx="694" cy="438" r="18" fill="#f6ead9" stroke="none"/>
+    <circle cx="226" cy="640" r="16" fill="#f6ead9" stroke="none"/>
+    <circle cx="434" cy="640" r="16" fill="#f6ead9" stroke="none"/>
+    <circle cx="590" cy="640" r="16" fill="#f6ead9" stroke="none"/>
+    <circle cx="798" cy="640" r="16" fill="#f6ead9" stroke="none"/>
+  </g>
+  <text x="512" y="792" text-anchor="middle" fill="#fff8ed" font-size="360" font-weight="700" font-family="STKaiti, KaiTi, serif">谱</text>
+  <path d="M228 850h568" stroke="#d7aa72" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+</svg>

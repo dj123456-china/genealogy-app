@@ -1,0 +1,93 @@
+{
+  "audit_date": "2026-10-09",
+  "scope": "当前源码、本地运行后端、MySQL 只读结构核验、隔离内存复现",
+  "existing_tests": {
+    "frontend": {
+      "passed": 13,
+      "failed": 0
+    },
+    "backend": {
+      "passed": 17,
+      "failed": 0
+    }
+  },
+  "evidence": {
+    "backend": {
+      "numeric_death_year": [
+        {
+          "field": [
+            "members",
+            0,
+            "death_year"
+          ],
+          "type": "string_type"
+        }
+      ],
+      "sync_persistence": {
+        "members": 2,
+        "reminders": 1,
+        "parent_ids": [
+          1
+        ],
+        "reminder_member_id": 2,
+        "relationship_rows": 0
+      },
+      "stale_snapshot_overwrites_newer": {
+        "before": 3,
+        "after": 2
+      },
+      "live_database": {
+        "connected": true,
+        "tables": [
+          "audit_logs",
+          "families",
+          "family_members",
+          "family_memberships",
+          "family_relationships",
+          "file_assets",
+          "invitations",
+          "login_logs",
+          "notification_records",
+          "reminders",
+          "sms_verification_records",
+          "user_sessions",
+          "users"
+        ],
+        "avatar_column": "TEXT COLLATE \"utf8mb4_unicode_ci\"",
+        "strict_sql_mode": true
+      },
+      "sms_configured": true
+    },
+    "frontend_conversion": {
+      "death_year_outbound_type": "number",
+      "reminder_member_id_roundtrip": "self",
+      "reminder_member_name_roundtrip": null,
+      "member_lunar_birthday_roundtrip": null,
+      "reminder_client_id_vs_local_id": {
+        "client_id": "r1",
+        "id": "3"
+      }
+    },
+    "frontend_sync": {
+      "late_account_response": {
+        "active_account": "B",
+        "displayed_family": "用户 A 家族",
+        "displayed_member": "用户 A 成员"
+      },
+      "offline_save": {
+        "returned_without_error": true,
+        "local_members": 1,
+        "error": "隔离测试：网络不可用"
+      },
+      "after_cloud_pull": {
+        "local_members": 0
+      }
+    }
+  },
+  "limits": [
+    "未发送真实短信",
+    "未修改用户业务数据库",
+    "未做手机或小程序真机验收",
+    "真实链路不等于所有端到端场景验收通过"
+  ]
+}

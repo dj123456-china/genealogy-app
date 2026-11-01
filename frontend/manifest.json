@@ -1,0 +1,54 @@
+{
+  "name": "家谱制作器",
+  "appid": "",
+  "description": "家族世系、成员档案与纪念日管理",
+  "versionName": "2.0.0",
+  "versionCode": "200",
+  "transformPx": false,
+  "vueVersion": "3",
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-app",
+    "compilerVersion": 3,
+    "splashscreen": {
+      "alwaysShowBeforeRender": true,
+      "waiting": true,
+      "autoclose": true,
+      "delay": 0
+    },
+    "modules": {},
+    "distribute": {
+      "android": {
+        "packagename": "com.jiangyuhang.familytree",
+        "permissions": []
+      },
+      "ios": {},
+      "icons": {
+        "android": {
+          "mdpi": "static/app-icons/android-48.png",
+          "hdpi": "static/app-icons/android-72.png",
+          "xhdpi": "static/app-icons/android-96.png",
+          "xxhdpi": "static/app-icons/android-144.png",
+          "xxxhdpi": "static/app-icons/android-192.png"
+        },
+        "ios": {}
+      }
+    }
+  },
+  "h5": {
+    "title": "家谱制作器",
+    "router": {
+      "mode": "hash"
+    }
+  },
+  "mp-weixin": {
+    "appid": "",
+    "setting": {
+      "urlCheck": true
+    },
+    "usingComponents": true
+  },
+  "uniStatistics": {
+    "enable": false
+  }
+}

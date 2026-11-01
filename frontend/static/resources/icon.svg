@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <rect width="1024" height="1024" fill="#8b2f2a"/>
+  <rect x="108" y="108" width="808" height="808" rx="92" fill="none" stroke="#fffaf3" stroke-width="30" opacity="0.9"/>
+  <text x="512" y="688" text-anchor="middle" fill="#fffaf3" font-family="STSong, Songti SC, serif" font-size="560">谱</text>
+</svg>
